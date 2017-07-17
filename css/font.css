@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins-Regular.woff') format('woff'),
+    url('../fonts/Poppins-Regular.ttf') format('truetype'),
+    url('../fonts/Poppins-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fzyx';
+    src: url('../fonts/fzyxjt.eot');
+    src: url('../fonts/fzyxjt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fzyxjt.woff') format('woff'),
+    url('../fonts/fzyxjt.ttf') format('truetype'),
+    url('../fonts/fzyxjt.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
