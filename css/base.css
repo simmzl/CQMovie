@@ -102,6 +102,31 @@ html ,body{
     color:white;
 }
 
+.op2{
+    opacity: 0.2;
+}
+.op5{
+    opacity: 0.5;
+}
+.color-red{
+    background-color: #3225ff;
+}
+.color-gray{
+    background-color: #cdc9dd;
+}
+.color-origin{
+    background-color: #f5574c;
+}
+.color-black{
+    background-color: black;
+}
+.color-cyan{
+    background-color: #00d1b2;
+}
+.color-gray1{
+    background-color: #7a7a7a;
+}
+
 .f20{
     font-size: 20px;
 }
@@ -110,16 +135,13 @@ html ,body{
     font-weight: 800;
 }
 .f44{
-    font-size: 44px;
-    font-weight: 900;
+    font-size: 44px; font-weight: 900;
 }
 .f50{
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 50px; font-weight: 800;
 }
 .f60{
-    font-size: 60px;
-    font-weight: 900;
+    font-size: 60px; font-weight: 900;
 }
 
 .f-p{
