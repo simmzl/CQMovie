@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIEW</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/minireset.css/0.0.2/minireset.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/view.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/examples.css" />-->
+    <script src="https://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script src="http://upcdn.b0.upaiyun.com/libs/jqueryui/jquery.ui-1.9.1.min.js"></script>-->
+    <script type="text/javascript" src="./vendors/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+//                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                sectionsColor: ['#7E8F7C', '#1BBC9B', '#7E8F7C', '#1BBC9B', '#7E8F7C'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third and last page','1','2']
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section">
+        <div class="container">
+            <p class="m-title ">CQMONER</p>
+        </div>
+    </div>
+    <div class="section" id="war">
+        <div class="container">
+            <a href="">122</a>
+            <a href="">4444</a>
+        </div>
+    </div>
+    <div class="section">Some section3</div>
+    <div class="section" id="love">Some section4</div>
+    <div class="section">Some section6</div>
+
+</div>
+</body>
+</html>
