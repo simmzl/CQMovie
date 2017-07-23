@@ -16,31 +16,88 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-//                anchors: ['firstPage', 'secondPage', '3rdPage'],
-                sectionsColor: ['#7E8F7C', '#1BBC9B', '#7E8F7C', '#1BBC9B', '#7E8F7C'],
-                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: ['First page', 'Second page', 'Third and last page','1','2']
+                lockAnchors: false,
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage','Lastpage'],
+                menu: '#menu',
+
+                sectionsColor: ['#888888', '#FFFFF', '#FFFFFF', '#dacfb1', '#7E8F7C','#ffffff'],
+
+//                navigation: true,
+//                navigationPosition: 'right',
+//                navigationTooltips: ['First page', 'Second page', 'Third and last page','1']
             });
         });
     </script>
 </head>
 <body>
+
+
+
 <div id="fullpage">
-    <div class="section">
-        <div class="container">
-            <p class="m-title ">CQMONER</p>
+<div id="myContainer">
+    <div class="section" id="section0">
+            <p class="m-title m-x-center">CQMOVIE</p>
+    </div>
+    <div class="section" id="section1">
+        <ul class="m-ul m-x-center">
+            <li><a  href="#firstPage">剧情/Drama</a></li>
+            <li ><a href="#secondPage" >战争/War</a></li>
+            <li><a href="#3rdPage">爱情/Romance</a></li>
+            <li><a href="#4thpage" >科幻/Sci-Fi</a></li>
+            <li><a href="#5thpage" style="color: inherit">动画/Animation</a></li>
+        </ul>
+    </div>
+    <div class="section stage" id="section2">
+            <p class="m-x-center stage-p">剧情/Drama</p>
+        <br>
+            <div class="m-x-center" id="stage-p1"><p>剧情/Drama</p></div>
+    </div>
+    <div class="section" id="section3">
+        <div class="slide">
+            <div class="m-x-center">
+                <div class=" card ">
+                    <img  src="images/m1.jpg" alt="">
+                    <p>挪威的森林</p>
+                </div>
+                <div class=" card ">
+                    <img  src="images/m1.jpg" alt="">
+                </div>
+                <div class=" card ">
+                    <img   src="images/m1.jpg" alt="">
+                </div>
+                <div class=" card ">
+                </div>
+                <div class="card ">
+                    <img   src="images/m1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="m-x-center">
+                <div class="card ">
+                    <img   src="images/m1.jpg" alt="">
+                    <p>挪威的森林</p>
+                </div>
+                <div class="card ">
+                    <img   src="images/m1.jpg" alt="">
+                </div>
+                <div class="card ">
+                    <img   src="images/m1.jpg" alt="">
+                </div>
+                <div class="card ">
+                    <img   src="images/m1.jpg" alt="">
+                </div>
+                <div class="card ">
+                    <img   src="images/m1.jpg" alt="">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="section" id="war">
-        <div class="container">
-            <a href="">122</a>
-            <a href="">4444</a>
-        </div>
+    <div class="section" id="section4">
+
     </div>
-    <div class="section">Some section3</div>
-    <div class="section" id="love">Some section4</div>
-    <div class="section">Some section6</div>
+
+</div>
 
 </div>
 </body>

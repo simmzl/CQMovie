@@ -170,6 +170,7 @@ html.fp-enabled,
 .fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
+    /*position: relative;*/
     z-index: 1;
     height: 4px;
     width: 4px;
@@ -191,6 +192,7 @@ html.fp-enabled,
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
+    /*position: relative;*/
     top: -2px;
     color: #fff;
     font-size: 14px;
