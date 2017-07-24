@@ -12,7 +12,8 @@
     <!--<script src="http://upcdn.b0.upaiyun.com/libs/jqueryui/jquery.ui-1.9.1.min.js"></script>-->
     <script type="text/javascript" src="./vendors/scrolloverflow.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--<script type="text/javascript" src="js/examples.js"></script>-->
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -27,6 +28,9 @@
 //                navigationTooltips: ['First page', 'Second page', 'Third and last page','1']
             });
         });
+
+
+
     </script>
 </head>
 <body>
@@ -34,66 +38,69 @@
 
 
 <div id="fullpage">
-<div id="myContainer">
-    <div class="section" id="section0">
-            <p class="m-title m-x-center">CQMOVIE</p>
-    </div>
-    <div class="section" id="section1">
-        <ul class="m-ul m-x-center">
-            <li><a  href="#firstPage">剧情/Drama</a></li>
-            <li ><a href="#secondPage" >战争/War</a></li>
-            <li><a href="#3rdPage">爱情/Romance</a></li>
-            <li><a href="#4thpage" >科幻/Sci-Fi</a></li>
-            <li><a href="#5thpage" style="color: inherit">动画/Animation</a></li>
-        </ul>
-    </div>
-    <div class="section stage" id="section2">
-            <p class="m-x-center stage-p">剧情/Drama</p>
-        <br>
-            <div class="m-x-center" id="stage-p1"><p>剧情/Drama</p></div>
-    </div>
-    <div class="section" id="section3">
-        <div class="slide">
-            <div class="m-x-center">
-                <div class=" card ">
-                    <img  src="images/m1.jpg" alt="">
-                    <p>挪威的森林</p>
+    <div id="myContainer">
+        <div class="section" id="section0">
+                <p class="m-title m-x-center">CQMOVIE</p>
+        </div>
+        <div class="section" id="section1">
+            <ul class="m-ul m-x-center">
+                <li id="drama"><a  href="#firstPage">剧情/Drama</a></li>
+                <li id="war"><a href="#secondPage">战争/War</a></li>
+                <li id="romance"><a href="#3rdPage">爱情/Romance</a></li>
+                <li id="sci"><a href="#4thpage">科幻/Sci-Fi</a></li>
+                <li id="anim"><a href="#5thpage">动画/Animation</a></li>
+            </ul>
+        </div>
+
+        <!--DRAMA-->
+        <div class="section stage" id="section2">
+                <p class="m-x-center stage-p">剧情/Drama</p>
+            <br>
+                <div class="m-x-center" id="stage-p1"><p>剧情/Drama</p></div>
+        </div>
+        <div class="section" id="section3">
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
                 </div>
-                <div class=" card ">
-                    <img  src="images/m1.jpg" alt="">
-                </div>
-                <div class=" card ">
-                    <img   src="images/m1.jpg" alt="">
-                </div>
-                <div class=" card ">
-                </div>
-                <div class="card ">
-                    <img   src="images/m1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="slide">
-            <div class="m-x-center">
-                <div class="card ">
-                    <img   src="images/m1.jpg" alt="">
-                    <p>挪威的森林</p>
-                </div>
-                <div class="card ">
-                    <img   src="images/m1.jpg" alt="">
-                </div>
-                <div class="card ">
-                    <img   src="images/m1.jpg" alt="">
-                </div>
-                <div class="card ">
-                    <img   src="images/m1.jpg" alt="">
-                </div>
-                <div class="card ">
-                    <img   src="images/m1.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section4">
+
+        <!--WAR-->
 
     </div>
 

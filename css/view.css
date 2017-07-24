@@ -80,7 +80,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     color: #00d1b2;
 }
 .m-ul li:nth-child(3){
-    color: #2478ff;
+    color: #D16098;
 }
 .m-ul li:nth-child(4){
     color: #310736;
@@ -91,7 +91,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 .m-ul li:hover{
     transform: scale(1.3,1.3);
-    background-color: #7a7a7a;
+    background-color: #ffffff;
 }
 .m-ul li a{
     color: inherit;
