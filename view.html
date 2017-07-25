@@ -5,10 +5,11 @@
     <title>VIEW</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/minireset.css/0.0.2/minireset.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/view.css">
     <!--<link rel="stylesheet" type="text/css" href="css/examples.css" />-->
-    <script src="https://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
     <!--<script src="http://upcdn.b0.upaiyun.com/libs/jqueryui/jquery.ui-1.9.1.min.js"></script>-->
     <script type="text/javascript" src="./vendors/scrolloverflow.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
@@ -16,49 +17,52 @@
     <!--<script type="text/javascript" src="js/examples.js"></script>-->
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#fullpage').fullpage({
-                lockAnchors: false,
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage','Lastpage'],
-                menu: '#menu',
 
-                sectionsColor: ['#888888', '#FFFFF', '#FFFFFF', '#dacfb1', '#7E8F7C','#ffffff'],
-
-//                navigation: true,
-//                navigationPosition: 'right',
-//                navigationTooltips: ['First page', 'Second page', 'Third and last page','1']
-            });
         });
-
-
-
     </script>
 </head>
-<body>
-
-
+<body id="m-body">
 
 <div id="fullpage">
     <div id="myContainer">
-        <div class="section" id="section0">
+        <!--LOGO-->
+        <div class="section fp-auto-height-responsive" id="section0">
                 <p class="m-title m-x-center">CQMOVIE</p>
         </div>
+
+        <!--导航-->
         <div class="section" id="section1">
+            <p class="backMsg backP"></p>
+            <p class="backMsg backMsg-list" style="letter-spacing: 20px;opacity: 0.07">NAVIGATION</p>
             <ul class="m-ul m-x-center">
-                <li id="drama"><a  href="#firstPage">剧情/Drama</a></li>
-                <li id="war"><a href="#secondPage">战争/War</a></li>
-                <li id="romance"><a href="#3rdPage">爱情/Romance</a></li>
-                <li id="sci"><a href="#4thpage">科幻/Sci-Fi</a></li>
-                <li id="anim"><a href="#5thpage">动画/Animation</a></li>
+                <li id="drama"><a  href="#3rdPage">剧情/Drama</a></li>
+                <li id="war"><a href="#5thPage">战争/War</a></li>
+                <li id="romance"><a href="#7thPage">爱情/Romance</a></li>
+                <li id="sci"><a href="#9thPage">科幻/Sci-Fi</a></li>
+                <li id="anim"><a href="#eleventhPage">动画/Animation</a></li>
             </ul>
         </div>
 
-        <!--DRAMA-->
+        <!--1 DRAMA-->
+        <!--台词-->
         <div class="section stage" id="section2">
-                <p class="m-x-center stage-p">剧情/Drama</p>
-            <br>
-                <div class="m-x-center" id="stage-p1"><p>剧情/Drama</p></div>
+            <div class="stage-left">
+                <p class="stage-left-h1 h-1">剧情/Drama</p>
+                <br>
+                <p class="stage-left-p" >
+                        My first CSS website but already dealing with floating columns, background sprites, and IE hacks.
+                        Although a lot has changed in a decade, I was already attracted by the idea of CSS being simple but not easy.
+                </p>
+            </div>
+            <div class="card  stage-right" >
+                <img  src="images/m1.jpg" alt="">
+                <p>挪威的森林</p>
+            </div>
+                <!--<div class="m-x-center" id="stage-p1"><p>剧情/Drama</p></div>-->
         </div>
+        <!--电影列表-->
         <div class="section" id="section3">
+            <div class="backMsg backMsg-list ">DRAMA</div>
             <div class="slide">
                 <div class="m-x-center">
                     <div class=" card ">
@@ -100,11 +104,256 @@
             </div>
         </div>
 
-        <!--WAR-->
+        <!--2 WAR-->
+        <!--台词-->
+        <div class="section stage" id="section4">
+            <div class="stage-left">
+                <p class="stage-left-h1 h-2">战争/War</p>
+                <br>
+                <p class="stage-left-p" >
+                    My first CSS website but already dealing with floating columns, background sprites, and IE hacks.
+                    Although a lot has changed in a decade, I was already attracted by the idea of CSS being simple but not easy.
+                </p>
+            </div>
+            <div class="card  stage-right" >
+                <img  src="images/m1.jpg" alt="">
+                <p>挪威的森林</p>
+            </div>
+        </div>
+        <!--电影列表-->
+        <div class="section" id="section5">
+            <div class="backMsg backMsg-list ">WAR</div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!--3 Romance-->
+        <!--台词-->
+        <div class="section stage" id="section6">
+            <div class="stage-left">
+                <p class="stage-left-h1 h-3" >爱情/Romance</p>
+                <br>
+                <p class="stage-left-p" >
+                    My first CSS website but already dealing with floating columns, background sprites, and IE hacks.
+                    Although a lot has changed in a decade, I was already attracted by the idea of CSS being simple but not easy.
+                </p>
+            </div>
+            <div class="card  stage-right" >
+                <img  src="images/m1.jpg" alt="">
+                <p>挪威的森林</p>
+            </div>
+        </div>
+        <!--电影列表-->
+        <div class="section" id="section7">
+            <div class="backMsg backMsg-list ">ROMANCE</div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--4 Sci-Fi-->
+        <!--台词-->
+        <div class="section stage" id="section8">
+            <div class="stage-left">
+                <p class="stage-left-h1 h-4">科幻/Sci-Fi</p>
+                <br>
+                <p class="stage-left-p" >
+                    My first CSS website but already dealing with floating columns, background sprites, and IE hacks.
+                    Although a lot has changed in a decade, I was already attracted by the idea of CSS being simple but not easy.
+                </p>
+            </div>
+            <div class="card  stage-right" >
+                <img  src="images/m1.jpg" alt="">
+                <p>挪威的森林</p>
+            </div>
+        </div>
+        <!--电影列表-->
+        <div class="section" id="section9">
+            <div class="backMsg backMsg-list ">SCI-FI</div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--5 Animation-->
+        <!--台词-->
+        <div class="section stage" id="section10">
+            <div class="stage-left">
+                <p class="stage-left-h1 h-5">动画/Animation</p>
+                <br>
+                <p class="stage-left-p" >
+                    My first CSS website but already dealing with floating columns, background sprites, and IE hacks.
+                    Although a lot has changed in a decade, I was already attracted by the idea of CSS being simple but not easy.
+                </p>
+            </div>
+            <div class="card  stage-right" >
+                <img  src="images/m1.jpg" alt="">
+                <p>挪威的森林</p>
+            </div>
+        </div>
+        <!--电影列表-->
+        <div class="section" id="section11">
+            <div class="backMsg backMsg-list ">ANIMATION</div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class=" card ">
+                        <img  src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class=" card ">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="m-x-center">
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                        <p>挪威的森林</p>
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                    <div class="card ">
+                        <img   src="images/m1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
+<!--<audio  autoplay preload loop style="display: none" id="m-music-play" >-->
+    <!--<source src="http://mp3.flash127.com/music/17957.mp3" type="audio/mpeg">-->
+<!--</audio>-->
+<audio autoplay preload loop style="display: none" id="m-music-play" >
+    <source src="./music/coldplay.mp3" type="audio/mpeg">
+</audio>
+<!--<div style="position: absolute;top: 90%;left:90% ;font-size: 20px;color: #333333"><a href="#firstPage">temp</a><a-->
+        <!--href="#secondPage">nav</a></div>-->
 
 </div>
 </body>

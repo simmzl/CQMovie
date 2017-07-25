@@ -48,11 +48,10 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 .m-title{
     font-family: fzyx;
     font-size:90px;
-    font-weight: 300;
+    font-weight: 900;
     color: white;
-    /*letter-spacing: 10px;*/
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     transition: 0.5s ease-in-out 0.2s;
     display: inline-block;
 }
@@ -73,50 +72,77 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     /*float: left;*/
 
 }
-.m-ul li:nth-child(1){
-    color: #ff470f;
-}
-.m-ul li:nth-child(2){
-    color: #00d1b2;
-}
-.m-ul li:nth-child(3){
-    color: #D16098;
-}
-.m-ul li:nth-child(4){
-    color: #310736;
-}
-.m-ul li:last-child{
-    margin-right: 0;
-    color: #e81c4f;
-}
+
 .m-ul li:hover{
     transform: scale(1.3,1.3);
     background-color: #ffffff;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 .m-ul li a{
     color: inherit;
 }
+.backMsg{
+    position: absolute;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: white;
+    /*opacity: 0;*/
+    /*transition: opacity 0.5s;*/
+}
+
 
 /*台词*/
-.stage{
-    font-size: 24px;
+.stage-left{
+    margin-left: 20%;
+    float: left;
+    width: 40%;
+    color: white;
 }
-/*.stage p :nth-child(1){*/
-    /*display: inline-block;*/
-    /*top: -17%;!important;*/
-/*}*/
-.stage-p{
+.stage-left-h1{
     display: inline-block;
-    top: -17%;!important;
+    font-size: 44px;
+    font-weight: 600;
+    padding: 20px 40px 20px 20px;
+    transition: 0.2s ease-in-out;
 }
-#stage-p1{
-    display: inline-block;
+.stage-left-h1:hover{
+    background-color: white;
+    transform: scale(1.1,1.1);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
 
-    top: 13%;!important;
-    text-align: center;
+
+.stage-left-p{
+    padding: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out 0.1s;
 }
+.stage-left-p:hover{
+    opacity: 1;
+}
+.stage-right{
+    float: right;
+    margin-right:20%;
+    margin-top: 50px;
+}
+.stage-right:hover{
+
+}
+
 
 /*电影列表*/
+.backMsg-list{
+    z-index: 0;
+    opacity: 0.1;
+    color: gray;
+}
+
 .card{
     background-color: white;
     float: left;
@@ -130,11 +156,9 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     overflow: hidden;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    /*border-radius: 6px;*/
 }
 .card:hover{
-    /*box-shadow: 8px 8px 20px #g;*/
-    transform:scale(1.08, 1.08);
+    transform:scale(1.2, 1.2);
     box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
@@ -148,4 +172,33 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     text-align: center;
     margin-top: 5px;
     padding-bottom: 10px;
+}
+/*音乐控制*/
+#m-music:hover{
+    opacity: 1;
+    transform:scale(1.2, 1.2);
+}
+/*防止左右指示与垂直方向导航重叠*/
+.fp-controlArrow.fp-prev {
+    left: 50px;
+}
+.fp-controlArrow.fp-next{
+    right: 50px;
+}
+
+.m-ul li:nth-child(1), .h-1:hover{
+    color: #ff2b53;
+}
+.m-ul li:nth-child(2), .h-2:hover{
+    color: #00d1b2;
+}
+.m-ul li:nth-child(3),.h-3:hover{
+    color: #D16098;
+}
+.m-ul li:nth-child(4), .h-4:hover{
+    color: #310736;
+}
+.m-ul li:last-child , .h-5:hover{
+    margin-right: 0;
+    color: #e81c4f;
 }

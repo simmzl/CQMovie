@@ -168,6 +168,7 @@ html.fp-enabled,
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
+    opacity: 0.8;
     border-radius: 50%;
     position: absolute;
     /*position: relative;*/

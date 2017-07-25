@@ -3,18 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/fullPage.js/2.9.4/jquery.fullpage.css">
-    <script type="text/javascript" src="https://cdn.staticfile.org/fullPage.js/2.9.4/vendors/scrolloverflow.min.js">
-    </script>
-    <script type="text/javascript" src="https://cdn.staticfile.org/fullPage.js/2.9.4/jquery.fullpage.js"></script>
-    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/minireset.css/0.0.2/minireset.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /*.nav-v {*/
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        /*right: 1%;*/
+        /*}*/
+
+        .nav-v ul li {
+            display: block;
+            margin: 7px;
+            position: relative;
+            background-color: #00d1b2;
+        }
+
+        .nav-v ul li a {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: red;
+        }
+
+        .nav-v ul li a span {
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 4px;
+            width: 4px;
+            border: 0;
+            background: #333;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /*margin: -2px 0 0 -2px;*/
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .nav-v-left {
+            float: left;
+            display: inline-block;
+        }
+    </style>
 </head>
-<body>
-<div id="fullpage">
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
+<body style="background-color: #7a7a7a">
+<div id="fp-nav" class="right">
+    <ul>
+        <li><a href="#firstPage" class=""><span></span></a>
+            <div class="fp-tooltip right"></div>
+        </li>
+        <li><a href="#secondPage" class=""><span></span></a>
+            <div class="fp-tooltip right"></div>
+        </li>
+        <li><a href="#3rdPage" class=""><span></span></a>
+            <div class="fp-tooltip right"></div>
+        </li>
+        <li><a href="#4thPage" class=""><span></span></a>
+            <div class="fp-tooltip right"></div>
+        </li>
+        <li><a href="#5thPage" class=""><span></span></a></li>
+        <li><a href="#6thPage" class=""><span></span></a></li>
+        <li><a href="#7thPage" class=""><span></span></a></li>
+        <li><a href="#8thPage" class=""><span></span></a></li>
+        <li><a href="#9thPage" class=""><span></span></a></li>
+        <li><a href="#10thPage" class=""><span></span></a></li>
+        <li><a href="#eleventhPage" class=""><span></span></a></li>
+        <li><a href="#LastPage" class=""><span></span></a></li>
+        <li><i class="fa fa-music fa-spin "style="color: #00d1b2;opacity: 0.4"></i></li>
+    </ul>
 </div>
+
 </body>
 </html>
