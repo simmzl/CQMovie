@@ -118,10 +118,17 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 
 .stage-left-p{
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 36px;
     opacity: 0.8;
     transition: 0.5s ease-in-out 0.1s;
+    width: 80%;
+    color: white;
+}
+.stage-left-p a{
+    outline: none;
+    color: white;
 }
 .stage-left-p:hover{
     opacity: 1;
