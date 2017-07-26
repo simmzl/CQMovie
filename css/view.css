@@ -1,37 +1,3 @@
-
-/*字体*/
-
-/*@font-face {*/
-    /*font-family: 'poppins';*/
-    /*src: url('../fonts/Poppins-Regular.eot');*/
-    /*src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),*/
-    /*url('../fonts/Poppins-Regular.woff') format('woff'),*/
-    /*url('../fonts/Poppins-Regular.ttf') format('truetype'),*/
-    /*url('../fonts/Poppins-Regular.svg') format('svg');*/
-    /*font-weight: 600;*/
-    /*font-style: normal;*/
-/*}*/
-/*@font-face {*/
-    /*font-family: 'fzyx';*/
-    /*src: url('../fonts/fzyxjt.eot');*/
-    /*src: url('../fonts/fzyxjt.eot?#iefix') format('embedded-opentype'),*/
-    /*url('../fonts/fzyxjt.woff') format('woff'),*/
-    /*url('../fonts/fzyxjt.ttf') format('truetype'),*/
-    /*url('../fonts/fzyxjt.svg') format('svg');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-/*}*/
-/*.f-pop{*/
-    /*font-family: poppins;*/
-/*}*/
-/*.f-fz{*/
-    /*font-family: fzyx;*/
-/*}*/
-/*body{*/
-    /*font-family: poppins;*/
-    /*!*font-family: fzyx;*!*/
-/*}*/
-
 a:link{text-decoration:none;    /* 指正常的未被访问过的链接*/  }
 a:visited{text-decoration:none; /*指已经访问过的链接*/}
 a:hover{text-decoration:none;   /*指鼠标在链接*/}
@@ -48,7 +14,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 .m-title{
     font-family: fzyx;
     font-size:90px;
-    font-weight: 900;
+    font-weight: 200;
     color: white;
     text-align: center;
     letter-spacing: 10px;
@@ -56,7 +22,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     display: inline-block;
 }
 .m-title:hover{
-    /*font-weight: 400;*/
     color: #00d1b2;
 }
 
@@ -69,7 +34,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     letter-spacing: 5px;;
     transition: 0.4s ease-in-out;
     padding: 20px;
-    /*float: left;*/
 
 }
 
@@ -90,8 +54,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     left: 50%;
     transform:translate(-50%,-50%);
     color: white;
-    /*opacity: 0;*/
-    /*transition: opacity 0.5s;*/
 }
 
 
@@ -101,6 +63,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     float: left;
     width: 40%;
     color: white;
+    z-index: 100;
 }
 .stage-left-h1{
     display: inline-block;
@@ -149,7 +112,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     opacity: 0.1;
     color: gray;
 }
-
 .card{
     background-color: white;
     float: left;
@@ -168,7 +130,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     transform:scale(1.2, 1.2);
     box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
-
 .card img{
     width: 180px;
     height: 260px;
@@ -208,4 +169,74 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 .m-ul li:last-child , .h-5:hover{
     margin-right: 0;
     color: #e81c4f;
+}
+
+/*contact*/
+.contact{
+    width: 60%;!important;
+}
+.stage-left label{
+    /*padding: 20px;*/
+    /*color: black;*/
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.stage-left input ,textarea{
+    color: gray;
+    outline: none;
+    margin: 10px 0 10px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 4px;
+    border:0 solid gray;
+    /*color: #00d1b2;*/
+}
+.stage-left input:focus ,textarea:focus{
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+#username{
+    width: 35%;
+    height: 40px;
+}
+#email{
+     width: 55%;
+    height: 40px;
+ }
+#detail{
+    width: 75%;
+    height: 80px;
+}
+#submit{
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor:pointer;
+    background-color: white;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+#submit:hover{
+    color: #646464;
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+.contact-h:hover{
+    color: #199475;
+}
+.stage-left ul{
+    margin-top: 15px;
+}
+.stage-left li{
+    float: left;
+    margin-right: 10px;
+    line-height: 10px;
+}
+.stage-left li:hover{
+    transform: scale(1.1,1.1);
+}
+.stage-left li a {
+    color: white;
+    outline: none;
 }

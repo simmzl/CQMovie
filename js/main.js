@@ -42,16 +42,16 @@ function moveVNav(){
 }
 //显示侧边导航
 function displayNav(){
-    var scrollTop = $(window).scrollTop();//禁用窗口滚动条时，无法获取滚动高度数值
+    //禁用窗口滚动条时，无法获取滚动高度数值
+    //var scrollTop = $(window).scrollTop();
     $('#fp-nav ul li a').css("display","inherit");
     $('#fp-nav ul li div').css("display","inherit");
-
 }
 
 //遍历写入进去本页显示侧边导航栏事件
 function innerEven(){
-    for(var i=2;i<=10;i=i+2){
-        $( "#section" + i  ).mouseenter(function(){
+    for(var i=2;i<=12;i=i+1){
+        $( "#section" + i  ).mouseover(function(){
             displayNav();
             //alert(i);
         });
@@ -75,7 +75,9 @@ function innerPoster(){
     $("#section5 img").each(function(){
         $(this).attr("src", "images/w/w"+i + ".jpg");
         $(this).after("<p></p>");
-        var movieNameW = new Array ("从海底出击","再见列宁","窃听风暴","战争之王","黑鹰坠落","金陵十三钗","地雷区","天空之眼","美国狙击手","狂怒","拆弹部队","南京！南京！","血战钢锯岭","厨子戏子痞子","珍珠港","生死狙击","辛德勒的名单","逃离德黑兰","猎杀本·拉登","沃伦","高地战","豪勇七蛟龙","绿区","绝密飞行","危机13小时","赛德克巴莱","拯救大兵瑞恩","集结号","比利·林恩的中场战事","孤独的幸存者");
+        var movieNameW = new Array ("从海底出击","再见列宁","窃听风暴","战争之王","黑鹰坠落","金陵十三钗","地雷区","天空之眼",
+            "美国狙击手","狂怒","拆弹部队","南京！南京！","血战钢锯岭","厨子戏子痞子","珍珠港","生死狙击","辛德勒的名单","逃离德黑兰",
+            "猎杀本·拉登","沃伦","高地战","豪勇七蛟龙","绿区","绝密飞行","危机13小时","赛德克巴莱","拯救大兵瑞恩","集结号","比利·林恩的中场战事","孤独的幸存者");
         $(this).next().text(movieNameW[i]);
         i++;
     });
@@ -104,7 +106,11 @@ function innerPoster(){
     $("#section11 img").each(function(){
         $(this).attr("src", "images/a/a"+i + ".jpg");
         $(this).after("<p></p>");
-        var movieNameA = new Array ();
+        var movieNameA = new Array ("千与千寻","风之谷","幽灵公主","哈尔的移动城堡","天空之城","猫的报恩","大圣归来","神偷奶爸（系列）",
+            "龙猫","功夫熊猫（系列）","冰河世纪（系列）","超能陆战队","疯狂动物城","飞屋环游记","机器人总动员","驯龙高手",
+            "借东西的小人阿莉埃蒂","怪兽大学","悬崖上的金鱼姬","美食总动员","侧耳倾听","波普先生的企鹅","闪电狗","起风了",
+            "大闹天宫","马达加斯加（系列）","奇幻森林","哆啦A梦伴我同行","犬夜叉（系列）","猫和老鼠（系列）","海贼王（系列）","欢乐树的朋友们","赛车总动员",
+            "海总动员","虫虫危机");
         $(this).next().text(movieNameA[i]);
         i++;
     });
@@ -112,6 +118,21 @@ function innerPoster(){
 
 
 $(document).ready(function(){
+
+    //fullpage.js
+    $('#fullpage').fullpage({
+        lockAnchors: false,
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage', '10thPage', 'eleventhPage','twelfthPage','LastPage'],
+        menu: '#menu',
+        slidesNavigation: true,
+
+        sectionsColor: ['#333', '#FFFFF', '#ff2b53', '#eee', '#00d1b2','#eee','#D16098', '#eee','#310736', '#eee','#e81c4f', '#eee','#199475'],
+//                scrollBar: true,
+
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['首页', '列表', '剧情/Drama','','战争/War','','爱情/Romance','','科幻/Sci-Fi','','动画/Animation','','Contact me']
+    });
 
     //列表加入特效事件
     $('#drama').mouseover(function(){
@@ -152,21 +173,6 @@ $(document).ready(function(){
         mTurnOut($('#anim'));
     });
 
-    //fullpage.js
-    $('#fullpage').fullpage({
-        lockAnchors: false,
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage', '10thPage', 'eleventhPage','LastPage'],
-        menu: '#menu',
-        slidesNavigation: true,
-
-        sectionsColor: ['#D2D0CB', '#FFFFF', '#ff2b53', '#eee', '#00d1b2','#eee','#D16098', '#eee','#310736', '#eee','#e81c4f', '#eee'],
-//                scrollBar: true,
-
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['首页', '列表', '剧情/Drama','','战争/War','','爱情/Romance','','科幻/Sci-Fi','','动画/Animation','']
-    });
-
     //音乐控制按钮加入侧边导航栏正下方
     appendMusic();
     //页面加载进来不显示侧边导航栏
@@ -175,7 +181,7 @@ $(document).ready(function(){
     $('#m-music i').click(function(){
         stopMusic();
     });
-    //遍历本页不显示侧边导航栏事件
+    //添加本页不显示侧边导航栏事件
     $('#section0 ').mouseover(function(){
         moveVNav();
     });
