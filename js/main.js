@@ -85,7 +85,7 @@ function innerPoster(){
     $("#section7 img").each(function(){
         $(this).attr("src", "images/r/r"+i + ".jpg");
         $(this).after("<p></p>");
-        var movieNameR = new Array ("那些年我们一起追过的女孩","HER","不能说的秘密","时空恋旅人","我脑中的橡皮擦",
+        var movieNameR = new Array ("那些年我们一起追的女孩","HER","不能说的秘密","时空恋旅人","我脑中的橡皮擦",
             "爱在黎明破晓前","爱在日落黄昏时","爱在午夜降临前","傲慢与偏见","怦然心动","星运里的错","山楂树之恋",
             "恋空","嫌疑人X的献身","暮光之城（系列）","北京爱情故事","挪威的森林（不及书的1/2）","听说","第三十六个故事","夏洛特烦恼");
         $(this).next().text(movieNameR[i]);

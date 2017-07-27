@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>VIEW</title>
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/minireset.css/0.0.2/minireset.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,6 +41,10 @@
         <div class="section stage" id="section2">
             <div class="stage-left">
                 <p class="stage-left-h1 h-1">剧情/Drama</p>
+                <div class="card  stage-right display-none" >
+                    <img  src="images/d/drama.jpg" alt="">
+                    <p >海边的曼彻斯特</p>
+                </div>
                 <br>
                 <p class="stage-left-p" >
                     从某种意义上说，《Manchester by the Sea》是一部反鸡汤电影。影片中的天空是灰蒙蒙的，地面覆盖着皑皑白雪，人与人
@@ -48,7 +53,7 @@
                     <a href="https://movie.douban.com/review/8389416/" target="_blank">（来自豆瓣）</a>
                 </p>
             </div>
-            <div class="card  stage-right" >
+            <div class="card  stage-right display-d" >
                 <img  src="images/d/drama.jpg" alt="">
                 <p >海边的曼彻斯特</p>
             </div>
@@ -203,6 +208,10 @@
         <div class="section stage" id="section4">
             <div class="stage-left">
                 <p class="stage-left-h1 h-2">战争/War</p>
+                <div class="card  stage-right display-none" >
+                    <img  src="images/w/war.jpg" alt="">
+                    <p>鬼子来了</p>
+                </div>
                 <br>
                 <p class="stage-left-p" >
                     很多人都将这部片子的禁止公映解说为该片中绝口不提共产党抗日，自始至终未出现一个党员形象，
@@ -211,7 +220,7 @@
                     <a href="https://movie.douban.com/review/1045537/" target="_blank">（来自豆瓣）</a>
                 </p>
             </div>
-            <div class="card  stage-right" >
+            <div class="card  stage-right display-d" >
                 <img  src="images/w/war.jpg" alt="">
                 <p>鬼子来了</p>
             </div>
@@ -343,6 +352,10 @@
         <div class="section stage" id="section6">
             <div class="stage-left">
                 <p class="stage-left-h1 h-3" >爱情/Romance</p>
+                <div class="card  stage-right display-d display-none" >
+                    <img  src="images/r/romance.jpg" alt="">
+                    <p>初吻</p>
+                </div>
                 <br>
                 <p class="stage-left-p" >
                     女神！<br>
@@ -351,9 +364,9 @@
                     <a href="https://movie.douban.com/review/1280893/" target="_blank">（来自豆瓣）</a>
                 </p>
             </div>
-            <div class="card  stage-right" >
+            <div class="card  stage-right display-d" >
                 <img  src="images/r/romance.jpg" alt="">
-                <p>初吻 / La boum</p>
+                <p>初吻</p>
             </div>
         </div>
         <!--电影列表-->
@@ -444,6 +457,10 @@
         <div class="section stage" id="section8">
             <div class="stage-left">
                 <p class="stage-left-h1 h-4">科幻/Sci-Fi</p>
+                <div class="card  stage-right display-none" >
+                    <img  src="images/s/scifi.jpg" alt="">
+                    <p>星际穿越</p>
+                </div>
                 <br>
                 <p class="stage-left-p" >
                     一个好geek是多么提高人类幸福度的存在：会写好剧本，会挑好演员，音乐品味也好。。。<br>
@@ -451,9 +468,9 @@
                     <a href="https://movie.douban.com/subject/1889243/" target="_blank">（来自豆瓣短评）</a>
                 </p>
             </div>
-            <div class="card  stage-right" >
+            <div class="card  stage-right display-d" >
                 <img  src="images/s/scifi.jpg" alt="">
-                <p>星际穿越 / Interstellar</p>
+                <p>星际穿越</p>
             </div>
         </div>
         <!--电影列表-->
@@ -602,6 +619,10 @@
         <div class="section stage" id="section10">
             <div class="stage-left">
                 <p class="stage-left-h1 h-5">动画/Animation</p>
+                <div class="card stage-right display-none" >
+                    <img  src="images/a/animation.jpg" alt="">
+                    <p>你的名字。</p>
+                </div>
                 <br>
                 <p class="stage-left-p" >
                     《你的名字。》如此钩动我们心弦，除了无可救药的东方浪漫以外。还因为这个故事被拍得太美了。
@@ -609,9 +630,9 @@
                     <a href="https://movie.douban.com/review/8207499/" target="_blank">（来自豆瓣）</a>
                 </p>
             </div>
-            <div class="card  stage-right" >
+            <div class="card  stage-right display-d" >
                 <img  src="images/a/animation.jpg" alt="">
-                <p>你的名字。/ 君の名は。</p>
+                <p>你的名字。</p>
             </div>
         </div>
         <!--电影列表-->
@@ -756,16 +777,16 @@
         <div class="section stage" id="section12">
             <!--<div class="backMsg backMsg-list" style="z-index:0">CONTACT ME</div>-->
             <div class="stage-left contact">
-                <p class="stage-left-h1 h-5 contact-h" style="font-size: 30px">电影描述有错误？或者有更多超棒的电影要分享给我！</p>
-                <form action="" autocomplete="on" method="post" >
+                <p class="stage-left-h1 h-6 contact-h" id="contact-h" >电影描述有错误？或者有更多超棒的电影要分享给我！</p>
+                <form action="./php/send.php" autocomplete="on" method="post" >
                     <label for="username">怎么称呼：</label><br>
-                    <input type="text" name="username" id="username"><br>
+                    <input type="text" name="username" id="username" maxlength="15" required="required"><br>
 
                     <label for="email">我需要你的邮箱致谢：</label><br>
-                    <input type="email" name="email" id="email"><br>
+                    <input type="email" name="email" id="email"  maxlength="30" required="required"><br>
 
                     <label for="detail">电影推荐或错误详情描述：</label><br>
-                    <textarea  name="detail" id="detail" rows="10">
+                    <textarea  name="detail" id="detail" rows="10" maxlength="150" required="required">
                     </textarea><br>
 
                     <input type="submit" id="submit" value="发送给我">
@@ -790,6 +811,6 @@
 <!--<audio autoplay preload loop style="display: none" id="m-music-play" >-->
     <!--<source src="./music/coldplay.mp3" type="audio/mpeg">-->
 <!--</audio>-->
-</div>
+<!--</div>-->
 </body>
 </html>
