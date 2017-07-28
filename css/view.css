@@ -3,6 +3,15 @@ a:visited{text-decoration:none; /*指已经访问过的链接*/}
 a:hover{text-decoration:none;   /*指鼠标在链接*/}
 a:active{text-decoration:none;  /* 指正在点的链接*/}
 
+::-moz-selection {
+    color: #ffffff;
+    background-color: #23a676;
+}
+::selection {
+    color: #ffffff;
+    background-color: #23a676;
+}
+
 .m-x-center{
     display:inline-block;
     position: relative;
@@ -12,9 +21,10 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 
 /*首页*/
 .m-title{
-    font-family: fzyx;
-    font-size:90px;
-    font-weight: 200;
+    cursor: pointer;
+    font-family:'Gothamc2c7c099b19d07';
+    font-size:80px;
+    font-weight: 100;
     color: white;
     text-align: center;
     letter-spacing: 10px;
@@ -23,21 +33,15 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 .m-title:hover{
     color: #00d1b2;
+    /*color: #24ffde;*/
 }
 
 /*nav*/
-.m-ul{
-    /*display:inline-block;*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*transform: translateX( -50%);*/
-}
 .m-ul li{
-    /*width: 18%;*/
+    cursor: pointer;
     display: inline-block;
     font-size: 24px;
     font-weight: 600;
-    /*margin-right: 10px;*/
     letter-spacing: 4px;;
     transition: 0.4s ease-in-out;
     padding: 20px;
@@ -51,6 +55,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     color: inherit;
 }
 .backMsg{
+    cursor: default;
     position: absolute;
     font-size: 70px;
     font-weight: 700;
@@ -71,6 +76,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     z-index: 100;
 }
 .stage-left-h1{
+    cursor: default;
     display: inline-block;
     font-size: 44px;
     font-weight: 600;
@@ -85,6 +91,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 
 
 .stage-left-p{
+    cursor: default;
     padding: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -112,11 +119,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     /*transform:translateY(-50%);*/
     /*position: relative;*/
 }
-.stage-right:hover{
-
-}
-
-
 /*电影列表*/
 .backMsg-list{
     z-index: 0;
@@ -146,6 +148,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     height: 260px;
 }
 .card p{
+    cursor: default;
     color: gray;
     font-size: 14px;
     text-align: center;
@@ -160,6 +163,9 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 
 
 /*音乐控制*/
+#m-music{
+    cursor: pointer;
+}
 #m-music:hover{
     opacity: 1;
     transform:scale(1.2, 1.2);
@@ -181,21 +187,21 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 
 .m-ul li:nth-child(1), .h-1:hover{
-    /*margin-left: 0;*/
-    color: #ff2b53;
+    color: #f5574c;
 }
 .m-ul li:nth-child(2), .h-2:hover{
-    color: #00d1b2;
+    color: #4FB3A4;
 }
 .m-ul li:nth-child(3),.h-3:hover{
-    color: #D16098;
+    /*color: #D16098;*/
+    color: #E57B85;
 }
 .m-ul li:nth-child(4), .h-4:hover{
     color: #310736;
 }
 .m-ul li:last-child , .h-5:hover{
     margin-right: 0;
-    color: #e81c4f;
+    color: #E23352;
 }
 
 /*contact*/
@@ -239,6 +245,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     line-height: 18px;
 }
 #submit{
+    outline: none;
     width: 80px;
     height: 40px;
     margin-bottom: 10px;
@@ -270,13 +277,18 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     color: white;
     outline: none;
 }
-
-
 .display-none{
     display: none;
 }
+
 @media  screen and (min-width:992px) and ( max-width: 1259px)  {
 
+    /*nav*/
+    .m-ul li{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
     /*影评*/
     #section10 .stage-left-h1{
         font-size: 42px;
@@ -331,6 +343,13 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 
 @media  screen and (min-width:768px) and ( max-width: 991px)  {
+    /*nav*/
+    .m-ul li{
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        display: block;
+    }
     /*影评*/
     .stage-left{
     margin-left: 15%;
@@ -430,6 +449,21 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 
 @media  screen and ( max-width: 767px){
+    /*nav*/
+    .backMsg.backMsg-list.backMsg-nav{
+        font-size: 22px;
+    }
+    .m-ul li{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        display: block;
+    }
+    /*首页*/
+    #section0 .m-title{
+        font-size: 50px;
+    }
+
     /*影评*/
     .stage-left{
         margin-left: 10%;
@@ -459,9 +493,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
         margin: 0 10px 0 20px;
         display: inherit;
     }
-    /*.stage-right.card{*/
-        /*margin: 0 20px 0 60px;*/
-    /*}*/
     .stage-right.card img{
         width:80px;
         height: 120px;
@@ -471,9 +502,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
         font-size: 8px;
         text-align: center;
         margin-top: -1px;
-        /*width: 68px;*/
-        /*margin-top: 5px;*/
-        /*padding-bottom: 10px;*/
     }
 
 
@@ -482,27 +510,33 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
         height: 105px;
         width: 60px;
         margin-left: 6px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
     }
     .card:hover{
-        transform:scale(4, 4);
-        box-shadow:0 15px 30px rgba(0,0,0,0.2);
+        transform:scale(2, 2);
     }
-    .card:hover{
+    .card:nth-child(1):hover,  .card:nth-child(5):hover,.card.stage-right:hover{
         transform:scale(1.5, 1.5);
-        box-shadow:0 15px 30px rgba(0,0,0,0.2);
     }
     .card img{
         width:60px;
         height: 86px;
     }
-    .card p{
+    .card p {
         color: gray;
         font-size: 8px;
         text-align: center;
         margin-top: -1px;
-        /*transform: scale(0.6);*/
-        /*-o-transform: scale(1);*/
-        /*padding: 2px;*/
+    }
+    /*解决电影名过长时显示不全的问题*/
+    .fs-small p{
+        font-size: 6px;
+        margin-top: 1px;
+    }
+    .fs-smaller p{
+        font-size: 5px;
+        margin-top: 1px;
     }
     /*侧边导航栏*/
     #fp-nav.right{

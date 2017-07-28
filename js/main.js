@@ -126,7 +126,7 @@ $(document).ready(function(){
         menu: '#menu',
         slidesNavigation: true,
 
-        sectionsColor: ['#333', '#FFFFF', '#ff2b53', '#eee', '#00d1b2','#eee','#D16098', '#eee','#310736', '#eee','#e81c4f', '#eee','#199475'],
+        sectionsColor: ['#333', '#FFFFF', '#f5574c', '#eee', '#4FB3A4','#eee','#E57B85', '#eee','#310736', '#eee','#E23352', '#eee','#199475'],
 //                scrollBar: true,
 
         navigation: true,
