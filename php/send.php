@@ -39,10 +39,11 @@ echo
     <title>Title</title>
     <script type="text/javascript">
         alert("发送成功");
+     		window.location.href=\'http://movie.simmzl.cn/view.html#LastPage\';
     </script>
 </head>
 <body>
-
+		
 </body>
 </html>';
 

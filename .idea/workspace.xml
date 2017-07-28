@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82d35fce-2182-476c-a9fc-6aaa060504b2" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/examples.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/font.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/examples.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/movie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/music/3441.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendors/jquery.easings.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendors/scrolloverflow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendors/scrolloverflow.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/music/coldplay.mp3" afterPath="$PROJECT_DIR$/music/coldplay.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/view.css" afterPath="$PROJECT_DIR$/css/view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/send.php" afterPath="$PROJECT_DIR$/php/send.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/send.php.bak" afterPath="$PROJECT_DIR$/php/send.php.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view.html" afterPath="$PROJECT_DIR$/view.html" />
     </list>
     <ignored path="movie.iws" />
     <ignored path=".idea/workspace.xml" />
