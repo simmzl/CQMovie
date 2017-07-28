@@ -2,6 +2,12 @@
 // * Created by zelong on 2017/7/19.
 // */
 
+function loaderPage () {
+    var t = $(".gtco-loader").fadeOut("slow");
+    setTimeout("t",300);
+    //var t=setTimeout("alert('5 seconds!')",5000);
+}
+
 //   鼠标经过改变背景颜色
 function mTurn ( obj ){
     var mColor = obj.css("color");
@@ -16,7 +22,7 @@ function mTurnOut(obj){
 
 //写入音乐图标
 function appendMusic(){
-    var txt = "<li id='m-music'><i class='fa fa-music fa-spin '  style='color: #00d1b2;opacity: 0.4'></i></li>";
+    var txt = "<li id='m-music'><i class='fa fa-music fa-spin'  style='color: #00d1b2;opacity: 0.6'></i></li>";
     $('#fp-nav ul li:last').after(txt);
 }
 //音乐控制
@@ -62,7 +68,7 @@ function innerEven(){
 function innerPoster(){
     var i = 0;
     $("#section3 img").each(function(){
-        $(this).attr("src", "images/d/d"+i + ".jpg");
+        $(this).attr("data-src", "images/d/d"+i + ".jpg");
         $(this).after("<p></p>");
         var movieNameD = new Array ("忠犬八公的故事","比海还深","八恶人","无耻混蛋","海街日记","看不见的客人","放牛班的故事","被解救的姜戈","上帝之城",
             "疯狂的石头","致命ID","不能说的秘密","阿甘正传","心灵捕手","罗曼蒂克消亡史","海蒂和她的爷爷","这个杀手不太冷","硬核亨利","低俗小说","素媛",
@@ -73,7 +79,7 @@ function innerPoster(){
     });
     i = 0;
     $("#section5 img").each(function(){
-        $(this).attr("src", "images/w/w"+i + ".jpg");
+        $(this).attr("data-src", "images/w/w"+i + ".jpg");
         $(this).after("<p></p>");
         var movieNameW = new Array ("从海底出击","再见列宁","窃听风暴","战争之王","黑鹰坠落","金陵十三钗","地雷区","天空之眼",
             "美国狙击手","狂怒","拆弹部队","南京！南京！","血战钢锯岭","厨子戏子痞子","珍珠港","生死狙击","辛德勒的名单","逃离德黑兰",
@@ -83,7 +89,7 @@ function innerPoster(){
     });
     i = 0;
     $("#section7 img").each(function(){
-        $(this).attr("src", "images/r/r"+i + ".jpg");
+        $(this).attr("data-src", "images/r/r"+i + ".jpg");
         $(this).after("<p></p>");
         var movieNameR = new Array ("那些年我们一起追的女孩","HER","不能说的秘密","时空恋旅人","我脑中的橡皮擦",
             "爱在黎明破晓前","爱在日落黄昏时","爱在午夜降临前","傲慢与偏见","怦然心动","星运里的错","山楂树之恋",
@@ -93,7 +99,7 @@ function innerPoster(){
     });
     i = 0;
     $("#section9 img").each(function(){
-        $(this).attr("src", "images/s/s"+i + ".jpg");
+        $(this).attr("data-src", "images/s/s"+i + ".jpg");
         $(this).after("<p></p>");
         var movieNameS = new Array ("2001太空漫游","人工智能","月球","水滴","地心引力","火星救援","加勒比海盗（系列）",
             "僵尸世界大战","我，机器人","雪国列车","汉江怪物","降临","普罗米修斯","疯狂麦克斯","奇异博士","后天","第九区",
@@ -104,7 +110,7 @@ function innerPoster(){
     });
     i = 0;
     $("#section11 img").each(function(){
-        $(this).attr("src", "images/a/a"+i + ".jpg");
+        $(this).attr("data-src", "images/a/a"+i + ".jpg");
         $(this).after("<p></p>");
         var movieNameA = new Array ("千与千寻","风之谷","幽灵公主","哈尔的移动城堡","天空之城","猫的报恩","大圣归来","神偷奶爸（系列）",
             "龙猫","功夫熊猫（系列）","冰河世纪（系列）","超能陆战队","疯狂动物城","飞屋环游记","机器人总动员","驯龙高手",
@@ -115,7 +121,6 @@ function innerPoster(){
         i++;
     });
 }
-
 
 $(document).ready(function(){
 
@@ -128,7 +133,7 @@ $(document).ready(function(){
 
         sectionsColor: ['#333', '#FFFFF', '#f5574c', '#eee', '#4FB3A4','#eee','#E57B85', '#eee','#310736', '#eee','#E23352', '#eee','#199475'],
 //                scrollBar: true,
-
+        lazyLoading: true,
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['首页', '列表', '剧情/Drama','','战争/War','','爱情/Romance','','科幻/Sci-Fi','','动画/Animation','','Contact me']
@@ -192,6 +197,7 @@ $(document).ready(function(){
     innerEven();
     //遍历写入电影列表海报
     innerPoster();
+    loaderPage();
 });
 
 

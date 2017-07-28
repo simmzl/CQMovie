@@ -20,6 +20,16 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 
 /*首页*/
+
+.gtco-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background:  center no-repeat #bbbbbb;
+}
 .m-title{
     cursor: pointer;
     font-family:'Gothamc2c7c099b19d07';
@@ -245,6 +255,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     line-height: 18px;
 }
 #submit{
+    -webkit-appearance: none;
     outline: none;
     width: 80px;
     height: 40px;
@@ -450,9 +461,10 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 
 @media  screen and ( max-width: 767px){
     /*nav*/
-    .backMsg.backMsg-list.backMsg-nav{
+    .backMsg.backMsg-list.backMsg-nav,.backP{
         font-size: 22px;
     }
+
     .m-ul li{
         font-size: 20px;
         font-weight: 500;
@@ -504,7 +516,6 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
         margin-top: -1px;
     }
 
-
     /*电影列表*/
     .card{
         height: 105px;
@@ -536,7 +547,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     }
     .fs-smaller p{
         font-size: 5px;
-        margin-top: 1px;
+        margin-top: -1px;
     }
     /*侧边导航栏*/
     #fp-nav.right{
@@ -546,6 +557,10 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     }
     .fp-controlArrow.fp-prev ,.fp-controlArrow.fp-next{
         display: none;
+    }
+    .fa.fa-music.fa-spin{
+        /*transform: scale(3);*/
+        font-size: 20px;
     }
     /*contact*/
     #contact-h{

@@ -31,9 +31,19 @@ mysql_query($sql,$con);
 
 mysql_close($con);
 
-echo $username.'  ';
-echo $email.'  ';
-echo $detail.'  ';
-echo 'OK!';
+echo 
+'<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        alert("发送成功");
+    </script>
+</head>
+<body>
+
+</body>
+</html>';
 
 ?>
