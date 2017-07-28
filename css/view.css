@@ -541,14 +541,14 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
         margin-top: -1px;
     }
     /*解决电影名过长时显示不全的问题*/
-    .fs-small p{
-        font-size: 6px;
-        margin-top: 1px;
-    }
-    .fs-smaller p{
-        font-size: 5px;
-        margin-top: -1px;
-    }
+    /*.fs-small p{*/
+        /*font-size: 6px;*/
+        /*margin-top: 1px;*/
+    /*}*/
+    /*.fs-smaller p{*/
+        /*font-size: 5px;*/
+        /*margin-top: -1px;*/
+    /*}*/
     /*侧边导航栏*/
     #fp-nav.right{
         right: 0;
