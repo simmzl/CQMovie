@@ -11,7 +11,7 @@ function loaderPage () {
 //修复当窗口宽度小于768时电影名过长的显示BUG
 function fixBug(){
     var width = $(window).width();
-    alert("应该没错了！");
+    //alert("应该没错了！");
     if (width < 768 ){
         $(".fixBug-3 p").text("哆啦A梦");
         $(".fixBug-2 p").text("借东西的小...");

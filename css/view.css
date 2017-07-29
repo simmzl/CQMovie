@@ -48,6 +48,13 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     -ms-transition: 0.5s ease-in-out 0.2s;
     -o-transition: 0.5s ease-in-out 0.2s;
     display: inline-block;
+    /*修复移动端safari不居中问题*/
+    /*top: 50%;*/
+    /*transform: translateY( -50%);*/
+    /*-ms-transform: translateY( -50%); 	!* IE 9 *!*/
+    /*-moz-transform: translateY( -50%);	!* Firefox *!*/
+    /*-webkit-transform: translateY( -50%);!* Safari 和 Chrome *!*/
+    /*-o-transform: translateY( -50%);	!* Opera *!*/
 }
 .m-title:hover{
     color: #00d1b2;
