@@ -2,10 +2,21 @@
 // * Created by zelong on 2017/7/19.
 // */
 
+//加载出页面时过渡自然
 function loaderPage () {
     var t = $(".gtco-loader").fadeOut("slow");
     setTimeout("t",300);
-    //var t=setTimeout("alert('5 seconds!')",5000);
+}
+
+//修复当窗口宽度小于768时电影名过长的显示BUG
+function fixBug(){
+    var width = $(window).width();
+    alert("应该没错了！");
+    if (width < 768 ){
+        $(".fixBug-3 p").text("哆啦A梦");
+        $(".fixBug-2 p").text("借东西的小...");
+        $(".fixBug-1 p").text("比利·林恩的...");
+    }
 }
 
 //   鼠标经过改变背景颜色
@@ -198,6 +209,7 @@ $(document).ready(function(){
     //遍历写入电影列表海报
     innerPoster();
     loaderPage();
+    fixBug();
 });
 
 
