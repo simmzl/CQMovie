@@ -254,7 +254,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     color: #f5574c;
 }
 .m-ul li:nth-child(2), .h-2:hover{
-    color: #4FB3A4;
+    color: #555;
 }
 .m-ul li:nth-child(3),.h-3:hover{
     /*color: #D16098;*/
@@ -265,7 +265,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 .m-ul li:last-child , .h-5:hover{
     margin-right: 0;
-    color: #E23352;
+    color: #4FB3A4;
 }
 
 /*contact*/

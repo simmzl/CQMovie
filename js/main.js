@@ -142,8 +142,8 @@ $(document).ready(function(){
         menu: '#menu',
         slidesNavigation: true,
 
-        sectionsColor: ['#333', '#FFFFF', '#f5574c', '#eee', '#4FB3A4','#eee','#E57B85', '#eee','#310736', '#eee','#E23352', '#eee','#199475'],
-//                scrollBar: true,
+        sectionsColor: ['#333', '#FFFFF', '#f5574c', '#eee', '#555','#eee','#E57B85', '#eee','#310736', '#eee','#4FB3A4', '#eee','#199475'],
+//                scrollBar: true, #4FB3A4不错的绿色  动画栏红#E23352
         lazyLoading: true,
         navigation: true,
         navigationPosition: 'right',
