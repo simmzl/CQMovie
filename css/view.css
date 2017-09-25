@@ -269,6 +269,9 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 
 /*contact*/
+input{
+    padding: 8px 4px 4px 4px;
+}
 .contact{
     width: 60%;!important;
 }
