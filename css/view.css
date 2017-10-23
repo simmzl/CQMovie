@@ -161,10 +161,8 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     /*margin-top: 50px;*/
 }
 .card.stage-right{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     margin: 50px 0 0 0;
-    /*top: 50%;*/
-    /*transform:translateY(-50%);*/
-    /*position: relative;*/
 }
 /*电影列表*/
 .backMsg-list{
@@ -269,8 +267,8 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
 }
 
 /*contact*/
-input{
-    padding: 8px 4px 4px 4px;
+input,textarea{
+    padding: 3px ;
 }
 .contact{
     width: 60%;!important;
@@ -291,7 +289,7 @@ input{
     margin: 10px 0 10px 20px;
     font-size: 14px;
     letter-spacing: 1px;
-    font-weight: 400;
+    /*font-weight: 400;*/
     border-radius: 4px;
     border:0 solid gray;
 }
