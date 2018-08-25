@@ -4,8 +4,9 @@
 
 //加载出页面时过渡自然
 function loaderPage () {
-    var t = $(".gtco-loader").fadeOut("slow");
-    setTimeout("t",300);
+    setTimeout(function() {
+      $(".gtco-loader").fadeOut("slow");
+    },300);
 }
 
 //修复当窗口宽度小于768时电影名过长的显示BUG
