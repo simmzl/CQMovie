@@ -186,10 +186,7 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     margin-left: 44px;
     transition: 0.5s ease-in-out 0.1s;
     -moz-transition:0.5s ease-in-out 0.1s;	/* Firefox 4 */
-    -webkit-transition: 0.5s ease-in-out 0.1s;	/* Safari 和 Chrome */
-    -o-transition: 0.5s ease-in-out 0.1s;	/* Opera */
-    -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
+    -webkit-transition: 0.5s ease-in-out 0.1s;	/* Safari 和 Chr
     overflow: hidden;
     border-radius: 4px;
     font-size: 0;
