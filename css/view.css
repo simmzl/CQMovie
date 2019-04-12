@@ -181,16 +181,17 @@ a:active{text-decoration:none;  /* 指正在点的链接*/}
     /*position: relative;*/
     display: inline-block;
     height: 300px;
-    /*width: 220px;*/
+    /* width: 220px; */
     width: 180px;
     margin-left: 44px;
     transition: 0.5s ease-in-out 0.1s;
     -moz-transition:0.5s ease-in-out 0.1s;	/* Firefox 4 */
-    -webkit-transition: 0.5s ease-in-out 0.1s;	/* Safari 和 Chr
+    -webkit-transition: 0.5s ease-in-out 0.1s;
     overflow: hidden;
     border-radius: 4px;
     font-size: 0;
 }
+
 .card:hover{
     transform: scale(1.2, 1.2);
     -ms-transform: scale(1.2,1.2); 	/* IE 9 */
