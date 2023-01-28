@@ -151,7 +151,7 @@ $(document).ready(function(){
         navigationTooltips: ['首页', '列表', '剧情/Drama','','战争/War','','爱情/Romance','','科幻/Sci-Fi','','动画/Animation','','Contact me']
     });
 
-    $("#detail")[0].value = "很遗憾，这个两年前大学熬夜折腾开发的项目服务器已经关闭一年多了，所以发送是没有作用的。现在回头看，之前的代码写的非常非常烂，说明我在进步呀！";
+    $("#detail")[0].value = "很遗憾，这个 N 年前大学处于热爱熬夜折腾开发的项目服务器已经关闭 N-1 年多了，所以发送是没有作用的。现在回头看，之前的代码写的非常非常烂，说明我在进步呀！";
 
     //列表加入特效事件
     $('#drama').mouseover(function(){
